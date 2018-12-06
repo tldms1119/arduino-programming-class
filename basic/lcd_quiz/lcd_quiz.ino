@@ -13,10 +13,10 @@ void loop() {
   lcd.clear();
 
   if(toggle == true){
-    lcd.print(" (^o^)   (ToT) ");
+    lcd.print(" (^o^)  (ToT) ");
     toggle = false;
   } else {
-    lcd.print(" (ToT)   (^o^) ");
+    lcd.print(" (ToT)  (^o^) ");
     toggle = true;
   }
   
