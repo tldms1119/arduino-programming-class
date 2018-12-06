@@ -61,6 +61,13 @@ void setup() {
 void loop() {
   val = millis() / 1000;
 
+  if(val == 15){
+    for(int i = 0; i < 8; i++){
+      tone(8, 262, 250);
+      delay(100);
+    }
+  }
+  
   val4 = (val / 1000) % 10;
   val3 = (val / 100) % 10;
   val2 = (val / 10) % 10;
@@ -92,13 +99,6 @@ void loop() {
     selectDigitPos(4);
     printNumber(val1);
     delayMicroseconds(1000);
-  }
-
-  if(val == 15){
-    for(int i = 0; i < 8; i++){
-      tone(8, 262, 250);
-      delay(100);
-    }
   }
 }
 
