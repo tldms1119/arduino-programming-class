@@ -18,6 +18,9 @@ void loop() {
   lcd.print("light value : ");
   lcd.setCursor(0, 1);
   lcd.print(light);
+
+  int ledLight = map(light, 120, 1023, 0, 255);
+  analogWrite(3, ledLight);
   
   delay(1000);
 }
